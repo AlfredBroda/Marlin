@@ -1300,7 +1300,7 @@
  * Turn on with the command 'M111 S32'.
  * NOTE: Requires a lot of PROGMEM!
  */
-#define DEBUG_LEVELING_FEATURE
+// #define DEBUG_LEVELING_FEATURE
 
 #if ANY(MESH_BED_LEVELING, AUTO_BED_LEVELING_BILINEAR, AUTO_BED_LEVELING_UBL)
   // Gradually reduce leveling correction until a set height is reached,
@@ -1439,8 +1439,8 @@
 #define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing
-  #define Z_SAFE_HOMING_Y_POINT Y_CENTER  // Y point for Z homing
+  #define Z_SAFE_HOMING_X_POINT 30  // X point for Z homing
+  #define Z_SAFE_HOMING_Y_POINT 30  // Y point for Z homing
 #endif
 
 // Homing speeds (mm/min)
